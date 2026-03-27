@@ -1,0 +1,15 @@
+{
+  "name": "holy-war-card-browser",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Holy War card browser and playable board prototype",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

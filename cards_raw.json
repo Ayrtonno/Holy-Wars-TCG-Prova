@@ -1,0 +1,2002 @@
+[
+  {
+    "name": "Acqua",
+    "type": "Artefatto",
+    "rarity_or_crosses": "2",
+    "fede": "3",
+    "forza": "",
+    "effect": "I tuoi santi sono immuni alle maledizioni che causano la loro morte.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Arca della salvezza",
+    "type": "Maledizione",
+    "rarity_or_crosses": "8",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli due santi sul terreno. Distruggi tutti gli altri.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Aria",
+    "type": "Artefatto",
+    "rarity_or_crosses": "2",
+    "fede": "3",
+    "forza": "",
+    "effect": "Ottieni +1 ispirazione ogni turno finchè questa carta è sul terreno.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Ascensione",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Cerca un santo nel tuo cimitero e aggiungilo alla tua mano.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Biblioteca d'Oro",
+    "type": "Edificio",
+    "rarity_or_crosses": "4",
+    "fede": "5",
+    "forza": "",
+    "effect": "Ogni volta che giochi una benedizione, pesca una carta. Se è un santo, scomunicalo. Se è un artefatto o edificio, rimetti la carta nel mazzo. Se è una benedizione o maledizione, tienila in mano.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Brigante",
+    "type": "Santo",
+    "rarity_or_crosses": "6",
+    "fede": "0",
+    "forza": "3",
+    "effect": "Sacrifica un tuo santo per poterlo giocare. Aggiungi la fede iniziale del santo sacrificato a quella di questo santo. Entrambe le carte, alla loro morte, non faranno accumulare peccato.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Campana",
+    "type": "Artefatto",
+    "rarity_or_crosses": "10",
+    "fede": "10",
+    "forza": "",
+    "effect": "Aggiungi un segnalino contatore a questa carta all'inizio di ogni tuo turno. Puoi attivare l'effetto di questa carta rimuovendo qualsiasi numero di segnalini accumulati. Il costo in ispirazione per attivare questo effetto è pari al numero di segnalini rimossi. Per ogni segnalino rimosso, aumenta la fede di tutti i tuoi santi presenti sul campo di 1.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Canti Religiosi",
+    "type": "Artefatto",
+    "rarity_or_crosses": "5",
+    "fede": "6",
+    "forza": "",
+    "effect": "Scegli uno dei seguenti: Riprendi un santo dal cimitero alla tua mano e distruggi questa carta. Annulla il primo attacco che ricevi questo turno, se non hai santi presenti sul terreno.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Chiesa",
+    "type": "Edificio",
+    "rarity_or_crosses": "9",
+    "fede": "8",
+    "forza": "",
+    "effect": "Tutti i tuoi santi sul campo guadagnano 2 fede per ogni carta che peschi.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Dio, il Creatore",
+    "type": "Santo",
+    "rarity_or_crosses": "White",
+    "fede": "25",
+    "forza": "10",
+    "effect": "Puoi evocare questa carta dal reliquiario o dalla mano solo se \"Aria\", \"Fuoco\", \"Terra\" e \"Acqua\" sono sul campo; distruggi queste quattro carte quando la evochi. Ogni santo avversario sconfitto ti fa rimuovere dal peccato un valore pari alla sua fede iniziale.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Elemosina",
+    "type": "Maledizione",
+    "rarity_or_crosses": "7",
+    "fede": "",
+    "forza": "",
+    "effect": "Sposta un tuo santo dal tuo terreno a quello avversario per un turno. Alla morte del santo, il giocatore che lo controlla in quel momento guadagna i punti peccato.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Frate Curatore",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "3",
+    "forza": "3",
+    "effect": "Finchè sul terreno, ogni carta pescata dal tuo avversario conferirà +1 fede a tutti i tuoi santi presenti sul campo.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Fuoco",
+    "type": "Artefatto",
+    "rarity_or_crosses": "2",
+    "fede": "3",
+    "forza": "",
+    "effect": "Alla fine di ogni turno, tutti i santi sul campo con rarità pari o superiore a 4 croci perderanno 2 di fede. Se la fede di un santo raggiunge 0, esso verrà distrutto.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno 1: Cieli e Terra",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Dimezza il costo di un artefatto nella tua mano e posizionalo in campo.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno 2: Cielo Terrestre",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Nessun santo può attaccare il turno in cui questa carta è stata attivata.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno 3: Terre e Mari",
+    "type": "Maledizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli un santo in difesa sul tuo terreno e scambialo con un santo in attacco.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno 4: Stelle",
+    "type": "Benedizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Guarda le prime 3 carte del reliquiario, e rimettile in cima nello stesso ordine. Una volta fatto, puoi scegliere se mischiare il reliquiario.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno 5: Creature del Mare",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "6",
+    "forza": "2",
+    "effect": "Può attaccare solo se la tua ispirazione rimanente è superiore a 2.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno 6: Creature di Terra",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "3",
+    "forza": "3",
+    "effect": "Può attaccare solo se la tua ispirazione rimanente è inferiore a 5.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno 7: Riposo",
+    "type": "Maledizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli un santo sul terreno avversario. Esso non potrà attaccare durante il prossimo turno.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giorno Festivo",
+    "type": "Benedizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Puoi avere massimo 3 copie di \"Giorno Festivo\" nel tuo reliquiario. Finchè questa carta è attiva non si possono effettuare attacchi. L'effetto di questa carta si interrompe quando un giocatore pesca una carta.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Giudizio Universale",
+    "type": "Maledizione",
+    "rarity_or_crosses": "10",
+    "fede": "",
+    "forza": "",
+    "effect": "Riporta tutte le carte dai cimiteri ai rispettivi reliquiari e mischiali.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Guerriero Santificato",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "5",
+    "forza": "3",
+    "effect": "Può attaccare nuovamente scartando una carta dalla mano al cimitero.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Impostore",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "4",
+    "effect": "Questa carta non ha costo di evocazione se non sono presente santi sul tuo terreno.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Martire Esiliato",
+    "type": "Santo",
+    "rarity_or_crosses": "5",
+    "fede": "5",
+    "forza": "6",
+    "effect": "Rimuovi 2 peccato ogni volta che questo santo effettua un attacco.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Mela del Peccato",
+    "type": "Benedizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Equipaggia questa carta ad un santo: aumenta la sua fede di 15. Quando esso verrà sconfitto o distrutto per effetti di carte, il possessore del santo subirà il doppio del peccato e questa carta verrà scomunicata.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Missionario",
+    "type": "Santo",
+    "rarity_or_crosses": "5",
+    "fede": "6",
+    "forza": "0",
+    "effect": "Puoi giocarlo sul campo avversario. Non può essere attaccato. Perde 3 fede a ogni turno. Quando muore per questo effetto, infliggi 6 punti peccato al giocatore che lo controllava e rimetti questo santo nel suo reliquiario d'origine, mescolandolo successivamente.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Moribondo",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "1",
+    "forza": "2",
+    "effect": "Puoi scomunicare questa carta dalla tua mano per annullare la distruzione di un tuo santo.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Paladino Corrotto",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "6",
+    "forza": "3",
+    "effect": "Se \"Paladino della Fede\" è sul terreno quando questa carta viene evocata, distruggilo e scomunicalo (rimuovilo dal gioco). Poi pesca una carta.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Paladino della Fede",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "4",
+    "forza": "3",
+    "effect": "Quando viene messo in campo, puoi invertire la posizione di un santo in attacco con uno di difesa.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Papa",
+    "type": "Santo",
+    "rarity_or_crosses": "8",
+    "fede": "10",
+    "forza": "6",
+    "effect": "Può essere bersagliato da attacchi nemici solo se non hai altri santi in zona d’attacco.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Pellegrinaggio Forzato",
+    "type": "Maledizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Scambia i santi in attacco dell'avversario con quelli in difesa.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Perdono",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Rimetti nel tuo reliquiario una carta scomunicata. Dopo l'attivazione, rimetti questa carta nel reliquiario e mischialo.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Preghiera",
+    "type": "Benedizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Rimuovi 5 punti peccato.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Prete Anziano",
+    "type": "Santo",
+    "rarity_or_crosses": "1",
+    "fede": "1",
+    "forza": "3",
+    "effect": "Rimuovi 3 peccato ogni volta che questo santo effettua un attacco.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Processione",
+    "type": "Benedizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Guarda la prima carta del mazzo. Se è un santo, pescala e puoi giocare nuovamente questa benedizione. Altrimenti, termina l’effetto e scomunica la carta.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Profanatore",
+    "type": "Santo",
+    "rarity_or_crosses": "6",
+    "fede": "4",
+    "forza": "4",
+    "effect": "Quando questa carta viene giocata, puoi riprendere un artefatto dal tuo cimitero e aggiungerlo alla mano. Scomunica questa carta alla sua morte.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Proibizione Cristiana",
+    "type": "Maledizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Annulla l'attivazione dell'effetto di un santo.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Rifugio Sacro",
+    "type": "Artefatto",
+    "rarity_or_crosses": "3",
+    "fede": "3",
+    "forza": "",
+    "effect": "Ogni danno inferiore a 3 subito dai tuoi santi viene completamente annullato.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Sacrificio",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Puoi avere fino a 4 copie di \"Sacrificio\" nel reliquiario. Scarta una carta e pescane due.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Terra",
+    "type": "Artefatto",
+    "rarity_or_crosses": "2",
+    "fede": "3",
+    "forza": "",
+    "effect": "Finchè in campo, previeni gli effetti degli artefatti avversari che causerebbero la distruzione dei tuoi santi.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Umanità",
+    "type": "Artefatto",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "",
+    "effect": "Le carte equipaggiate con benedizioni non ti fanno guadagnare peccato alla loro morte.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Veggenza",
+    "type": "Benedizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Guarda le prime 5 carte del tuo reliquiario e rimettile in cima nell'ordine desiderato.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Vescovo della Città Buia",
+    "type": "Santo",
+    "rarity_or_crosses": "8",
+    "fede": "5",
+    "forza": "5",
+    "effect": "Quando entra in campo, ottiene +5 fede  per ogni santo presente sul terreno avversario.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Vescovo della Città Lucente",
+    "type": "Santo",
+    "rarity_or_crosses": "6",
+    "fede": "7",
+    "forza": "4",
+    "effect": "Quando entra in campo, conferisce +5 fede a ogni santo danneggiato sul tuo terreno.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Visione Celestiale",
+    "type": "Benedizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Puoi giocare questa carta solo se l’avversario ha 6 santi sul terreno. Pesca 3 carte.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Sacri Vasi",
+    "type": "Benedizione",
+    "rarity_or_crosses": "8",
+    "fede": "",
+    "forza": "",
+    "effect": "Rimuovi 10 punti peccato.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Settimo Sigillo",
+    "type": "Benedizione",
+    "rarity_or_crosses": "8",
+    "fede": "",
+    "forza": "",
+    "effect": "Cerca nel reliquiario 2 carte \"Giorno\" e aggiungile alla tua mano.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Genesi: Compimento",
+    "type": "Benedizione",
+    "rarity_or_crosses": "White",
+    "fede": "",
+    "forza": "",
+    "effect": "L'attivazione e risoluzione di questa carta non possono essere interrotte. Questo effetto è attivabile solo se \"Custode della Creazione\" è presente sul tuo lato di campo. Vinci il duello.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Custode della Creazione",
+    "type": "Santo",
+    "rarity_or_crosses": "10",
+    "fede": "30",
+    "forza": "0",
+    "effect": "Per evocare questo santo è necessario scomunicare dal tuo cimitero una copia di \"Giorno 1\", \"Giorno 2\", \"Giorno 3\", \"Giorno 4\", \"Giorno 5\", \"Giorno 6\" e \"Giorno 7\". Non può essere targettato da effetti.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Cronologia Sacra",
+    "type": "Benedizione",
+    "rarity_or_crosses": "7",
+    "fede": "",
+    "forza": "",
+    "effect": "Manda tutte le carte dalla tua mano al cimitero. Pesca 5 carte.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Biblioteca Apostolica",
+    "type": "Edificio",
+    "rarity_or_crosses": "8",
+    "fede": "8",
+    "forza": "",
+    "effect": "Aggiungi un segnalino contatore a questa carta ogni volta che giochi una benedizione o una maledizione. Consuma 3 segnalini per cercare nel reliquiario una benedizione o maledizione e aggiungila alla tua mano.",
+    "set": "CRI-1",
+    "faction": "Cristianesimo"
+  },
+  {
+    "name": "Thor",
+    "type": "Santo",
+    "rarity_or_crosses": "White",
+    "fede": "10",
+    "forza": "8",
+    "effect": "Se sconfitto in battaglia puoi scomunicare una copia di \"Tanngnjostr\" o \"Tanngrisnir\" dal tuo cimitero per ripristinare la sua fede a 4 annullando la sua distruzione.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Odino",
+    "type": "Santo",
+    "rarity_or_crosses": "7",
+    "fede": "5",
+    "forza": "8",
+    "effect": "Conferisci +1 forza a questa carta ogni volta che infligge danno ad un santo avversario. Se la fede del santo avversario viene ridotta a 0, a questa carta viene conferito +2 forza.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Tanngnjostr",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "3",
+    "effect": "Se \"Thor\" è sul tuo terreno, manda questa carta dal terreno al cimitero senza accumulare peccato. Conferisci a \"Thor\" +4 fede.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Tanngrisnir",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "3",
+    "effect": "Se \"Thor\" è sul tuo terreno, manda questa carta dal terreno al cimitero senza accumulare peccato. Conferisci a \"Thor\" +4 fede.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Mjolnir",
+    "type": "Artefatto",
+    "rarity_or_crosses": "10",
+    "fede": "8",
+    "forza": "",
+    "effect": "Manda \"Járngreipr\" dal terreno al cimitero per poter posizionare questa carta. Finche questa carta è sul terreno, \"Thor\" ottiene +8 forza.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Megingjörð",
+    "type": "Artefatto",
+    "rarity_or_crosses": "6",
+    "fede": "4",
+    "forza": "",
+    "effect": "Finchè posizionato sul terreno, conferisce +6 forza a \"Thor\" e +2 forza a tutti i santi presenti sul tuo lato di campo.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Járngreipr",
+    "type": "Artefatto",
+    "rarity_or_crosses": "6",
+    "fede": "4",
+    "forza": "",
+    "effect": "Finchè posizionato sul terreno, conferisce +2 forza a tutti i santi presenti sul tuo lato di campo.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Sif",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "4",
+    "forza": "2",
+    "effect": "Una volta per turno, scegli un santo sul tuo terreno e conferisci +4 fede.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Yggdrasil",
+    "type": "Edificio",
+    "rarity_or_crosses": "",
+    "fede": "",
+    "forza": "",
+    "effect": "Secondo archetipo",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Gungnir",
+    "type": "Artefatto",
+    "rarity_or_crosses": "5",
+    "fede": "4",
+    "forza": "",
+    "effect": "Conferisce +4 forza a \"Odino\" e +1 forza a tutti i santi presenti sul tuo lato di campo",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Loki",
+    "type": "Santo",
+    "rarity_or_crosses": "6",
+    "fede": "6",
+    "forza": "2",
+    "effect": "Manda questa questa carta dal terreno al cimitero senza subire punti peccato, per evocare dalla tua mano \"Jormungandr\" o \"Fernir\",",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Jordh",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "8",
+    "forza": "2",
+    "effect": "Dimezza il danno ricevuto dai santi avversari.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Valhalla",
+    "type": "Edificio",
+    "rarity_or_crosses": "8",
+    "fede": "8",
+    "forza": "",
+    "effect": "Finche questa carta è posizionata sul terreno, guadagni +2 ispirazione per turno.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Jormungandr",
+    "type": "Santo",
+    "rarity_or_crosses": "8",
+    "fede": "25",
+    "forza": "6",
+    "effect": "Ogni volta che questa carta attacca, perde 1 fede.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Fenrir",
+    "type": "Santo",
+    "rarity_or_crosses": "8",
+    "fede": "15",
+    "forza": "8",
+    "effect": "Ogni volta che questa carta attacca, perde 1 forza.",
+    "set": "NOR-1",
+    "faction": "Mitologia Norrena"
+  },
+  {
+    "name": "Albero di Pietra",
+    "type": "Santo",
+    "rarity_or_crosses": "5",
+    "fede": "8",
+    "forza": "3",
+    "effect": "Se viene sconfitto da un santo, puoi prendere ogni carta \"Pietra\" nel tuo cimitero e metterla nel reliquiario. Se attivi questo effetto, questa carta viene scomunicata.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Albero Fortunato",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "1",
+    "effect": "Quando sconfitto o mandato al cimitero, pesca 2 carte.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Albero Sacro",
+    "type": "Santo",
+    "rarity_or_crosses": "White",
+    "fede": "10",
+    "forza": "0",
+    "effect": "Va posizionato immediatamente quando pescato. Il turno termina. Alla fine di ogni turno (tuo o dell’avversario), evoca un Token Albero. Ogni Token ucciso fa guadagnare 2 Fede ad Albero Sacro (anziché 2 Peccato al giocatore).",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Albero Sconsacrato",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "3",
+    "forza": "3",
+    "effect": "Ogni santo sconfitto da questa carta viene scomunicato.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Albero Secolare",
+    "type": "Santo",
+    "rarity_or_crosses": "7",
+    "fede": "7",
+    "forza": "3",
+    "effect": "Ogni volta che subisce danno non mortale, ottiene +7 Fede.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Anfibio Tossico",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "2",
+    "forza": "2",
+    "effect": "Quando attacca un santo avversario, dopo il calcolo del danno, equipaggia questa carta a quel santo. Alla fine del prossimo turno, il santo equipaggiato viene distrutto e questa carta viene esiliata.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Aquila Vorace",
+    "type": "Santo",
+    "rarity_or_crosses": "6",
+    "fede": "2",
+    "forza": "8",
+    "effect": "Se distrugge un santo con un attacco, torna nella tua mano.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Caverna Profonda",
+    "type": "Artefatto",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "",
+    "effect": "Finchè questa carta è sul terreno, ogni carta \"Pietra\" distrutta torna nel reliquiario anzichè finire nel cimitero.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Colori d'Autunno",
+    "type": "Maledizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Per ogni carta Albero sul tuo campo, guadagni 2 Peccato e la distruggi. Per ogni carta distrutta in questo modo, evoca un Segno del Passato dalla tua mano o reliquiario.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Corteccia",
+    "type": "Artefatto",
+    "rarity_or_crosses": "5",
+    "fede": "5",
+    "forza": "",
+    "effect": "Tutte le carte Albero ottengono +5 Fede.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Creature del Sottobosco",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "6",
+    "forza": "4",
+    "effect": "Quando questa carta viene scomunicata, pesca 3 carte.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Diboscamento",
+    "type": "Maledizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Cerca 3 carte Albero nel tuo reliquiario e mandale al cimitero.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Foresta Sacra",
+    "type": "Edificio",
+    "rarity_or_crosses": "10",
+    "fede": "10",
+    "forza": "",
+    "effect": "Le tue carte Albero non possono essere bersagliate da maledizioni o benedizioni nemiche. Se una carta Albero viene scomunicata, torna nel mazzo d’origine invece.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Golem di Pietra",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "4",
+    "forza": "4",
+    "effect": "Se distrugge un santo, la sua Fede torna a 4.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Insetto della Palude",
+    "type": "Santo",
+    "rarity_or_crosses": "1",
+    "fede": "2",
+    "forza": "2",
+    "effect": "Non può essere bersagliato da maledizioni.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Insetto Dorato",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "3",
+    "forza": "2",
+    "effect": "Può attaccare tutti i santi nemici in zona d’attacco. Per ogni attacco riuscito, ottiene +1 Forza.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Inverno",
+    "type": "Maledizione",
+    "rarity_or_crosses": "8",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli 3 carte in campo con rarità ≤ 8. Scomunicale insieme a questa carta.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Larva Pestilenziale",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "2",
+    "forza": "1",
+    "effect": "Dimezza la forza del santo che distrugge questa carta.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Legame Primordiale",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Per ogni Albero che controlli, puoi spostare una carta con rarità ≤ 7 dal tuo cimitero al reliquiario.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Monsone",
+    "type": "Maledizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Manda 3 carte dalla tua mano o dalla cima del reliquiario al cimitero. Poi scegli 3 carte con rarità ≤ 8 sul campo e rimettili nel reliquiario del proprietario.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Muschio Tossico",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "2",
+    "effect": "Quando questo santo viene distrutto, l'avversario sceglie una carta dal proprio reliquiario e la manda al cimitero.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Occhi della Notte",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "2",
+    "effect": "Può attaccare anche dalla zona di difesa.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pianta Carnivora",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "3",
+    "forza": "3",
+    "effect": "Considerata una carta Albero. Se in campo è presente \"Insetto della Palude\", questa carta ottiene +2 Fede e +2 Forza.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pietra Bianca",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Perdi un numero di Peccato pari alla Forza del santo su cui attivi questa carta.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pietra Nera",
+    "type": "Maledizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Equipaggia questa carta su un santo. Distruggi questa carta equipaggiata per prevenire il primo attacco ricevuto da quel santo.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pietre Aguzze",
+    "type": "Artefatto",
+    "rarity_or_crosses": "5",
+    "fede": "4",
+    "forza": "",
+    "effect": "Ogni volta che un santo avversario entra in campo, subisce 2 Peccato.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pietre Pesanti",
+    "type": "Maledizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Durante il prossimo turno, l'avversario consuma il doppio dell'ispirazione per giocare le proprie carte.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pioggia",
+    "type": "Benedizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Ogni tuo santo ferito ottiene +4 Fede.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pioggia Acida",
+    "type": "Maledizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Tutti i santi in campo perdono 2 Fede.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Preghiera: Fertilità",
+    "type": "Benedizione",
+    "rarity_or_crosses": "9",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli 3 carte \"Albero\" nel tuo cimitero. La prima verrà messa in campo, la seconda verrà pescata, la terza verrà scomunicata. Non è possibile scegliere un edificio se la zona dedicata è già occupata.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Proibizione Naturale",
+    "type": "Maledizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Annulla l'effetto di un santo.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Radici",
+    "type": "Artefatto",
+    "rarity_or_crosses": "5",
+    "fede": "6",
+    "forza": "",
+    "effect": "Ogni carta Albero guadagna +2 Fede per turno.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Ruscello Sacro",
+    "type": "Edificio",
+    "rarity_or_crosses": "10",
+    "fede": "8",
+    "forza": "",
+    "effect": "Ogni token Albero fa guadagnare il doppio della Fede ad \"Albero Sacro\". Finchè questa carta è in campo, ottieni +2 Ispirazione per turno.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Sabbie Mobili",
+    "type": "Artefatto",
+    "rarity_or_crosses": "5",
+    "fede": "5",
+    "forza": "",
+    "effect": "Finchè in campo, ogni giocatore può attaccare con un solo santo per turno.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Sacrificio Naturale",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Può essere giocata solo se l’avversario non ha santi in difesa. Evoca 3 Token Sacrificali nelle sue zone difensive.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Segno Del Passato",
+    "type": "Artefatto",
+    "rarity_or_crosses": "6",
+    "fede": "8",
+    "forza": "",
+    "effect": "I santi avversari perdono 4 Forza finche attiva sul terreno.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Sequoia",
+    "type": "Santo",
+    "rarity_or_crosses": "7",
+    "fede": "8",
+    "forza": "4",
+    "effect": "Ogni volta che infligge un attacco mortale, raddoppia la sua Forza.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Spore",
+    "type": "Benedizione",
+    "rarity_or_crosses": "8",
+    "fede": "",
+    "forza": "",
+    "effect": "Metti tutte le carte della tua mano nel reliquiario. Durante il tuo prossimo turno, pesca 8 carte.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Tempesta",
+    "type": "Maledizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Ogni santo avversario subisce 3 di danno.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Terremoto: Magnitudo 10",
+    "type": "Maledizione",
+    "rarity_or_crosses": "10",
+    "fede": "",
+    "forza": "",
+    "effect": "Distruggi tutti gli artefatti ed edifici sul campo. Entrambi i giocatori guadagnano 2 Peccato per ogni carta distrutta. Se \"Vulcano\" è presente nella tua mano al momento della risoluzione di questo effetto, evocalo. Scomunica questa carta.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Terremoto: Magnitudo 3",
+    "type": "Maledizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Distruggi un artefatto avversario e guadagna 2 Peccato.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Tifone",
+    "type": "Benedizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Pesca 2 carte. Il tuo avversario scarta le prime 2 carte del suo reliquiario.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Token Albero",
+    "type": "Token",
+    "rarity_or_crosses": "",
+    "fede": "2",
+    "forza": "8",
+    "effect": "",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Token Sacrificale",
+    "type": "Token",
+    "rarity_or_crosses": "",
+    "fede": "5",
+    "forza": "0",
+    "effect": "",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Tornado",
+    "type": "Maledizione",
+    "rarity_or_crosses": "8",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli 3 santi in campo, di cui almeno uno dell’avversario. Distruggi tutti gli altri santi in campo.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Totem di Pietra",
+    "type": "Santo",
+    "rarity_or_crosses": "5",
+    "fede": "?",
+    "forza": "0",
+    "effect": "Consuma tutta la tua ispirazione rimanente per evocare questa carta. Non può attaccare. La sua Fede è pari al costo di evocazione x 3.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Uragano",
+    "type": "Maledizione",
+    "rarity_or_crosses": "7",
+    "fede": "",
+    "forza": "",
+    "effect": "Distruggi un santo e un artefatto avversario.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Voragine",
+    "type": "Maledizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Distruggi un santo avversario.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Fiamma Primordiale",
+    "type": "Edificio",
+    "rarity_or_crosses": "10",
+    "fede": "7",
+    "forza": "",
+    "effect": "Ogni volta che un santo avversario attacca, subisce 2 danni. Se un santo avversario viene distrutto per via di questo effetto, perdi 2 punti peccato.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Incendio",
+    "type": "Artefatto",
+    "rarity_or_crosses": "3",
+    "fede": "2",
+    "forza": "",
+    "effect": "Raddoppia il danno inflitto dall'effetto di \"Fiamma Primordiale\" per ogni copia di questa carta presente sul tuo lato di campo.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Pietra Focaia",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "2",
+    "forza": "4",
+    "effect": "Ogni volta che attacca un santo avversario, cerca nel tuo reliquiario un carta artefatto e aggiungila alla tua mano.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Stalattiti",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "4",
+    "forza": "4",
+    "effect": "Ogni volta che questa carta subisce danno da un santo avversario, esso subirà 2 danni.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Stalagmiti",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "5",
+    "forza": "2",
+    "effect": "Ogni volta che questa carta subisce danno da un santo avversario, esso subirà 3 danni.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Ciclicità Climatica",
+    "type": "Innata",
+    "rarity_or_crosses": "",
+    "fede": "",
+    "forza": "",
+    "effect": "Una volta per turno, scegli una carta santo con rarità 4 o inferiore presente nel tuo cimitero. Evocala sul terreno senza spendere Ispirazione.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Vulcano",
+    "type": "Santo",
+    "rarity_or_crosses": "White",
+    "fede": "25",
+    "forza": "15",
+    "effect": "Questa carta può solo essere evocata tramite l'effetto di \"Terremoto: Magnituto 10\". Una volta per turno può distruggere una carta sul terreno di qualsiasi giocatore.",
+    "set": "ANI-1",
+    "faction": "Animismo"
+  },
+  {
+    "name": "Anubi",
+    "type": "Santo",
+    "rarity_or_crosses": "10",
+    "fede": "0",
+    "forza": "0",
+    "effect": "Puoi mandare questa carta dal campo al cimitero per evocare un qualsiasi santo dal tuo cimitero in zona d'attacco.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Atum",
+    "type": "Santo",
+    "rarity_or_crosses": "white",
+    "fede": "25",
+    "forza": "15",
+    "effect": "Non consuma ispirazione per essere evocato. Finché è in campo, puoi evocare i santi dalla tua mano spendendo metà del loro costo.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Bende Consacrate",
+    "type": "Benedizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Equipaggiala ad un santo. Quando la sua fede scende a 0, distruggi questa carta: quel santo rimane con 1 fede.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Coccodrillo del Nilo",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "5",
+    "forza": "5",
+    "effect": "È immune alle maledizioni.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Deriu-hebet",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "3",
+    "forza": "2",
+    "effect": "Guarda la prima carta del reliquiario: se è una benedizione o maledizione, pescala. Altrimenti, rimischia.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Esondazione del Nilo",
+    "type": "Artefatto",
+    "rarity_or_crosses": "7",
+    "fede": "6",
+    "forza": "",
+    "effect": "Peschi una carta extra ogni turno.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Faro di Alessandria",
+    "type": "Artefatto",
+    "rarity_or_crosses": "4",
+    "fede": "5",
+    "forza": "",
+    "effect": "Una volta per turno, quando il tuo avversario pesca una carta, puoi fargli rimischiare quella carta nel reliquiario e rieffettuare la pescata.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Geb",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "4",
+    "forza": "4",
+    "effect": "Se hai un Edificio in mano, mentre Geb è sul terreno, il suo costo è ridotto di 1 ispirazione.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Geroglifici",
+    "type": "Artefatto",
+    "rarity_or_crosses": "5",
+    "fede": "5",
+    "forza": "",
+    "effect": "I santi avversari con rarità ≤ 2 non possono attaccare.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Iside",
+    "type": "Santo",
+    "rarity_or_crosses": "8",
+    "fede": "9",
+    "forza": "5",
+    "effect": "Quando entra in campo, cerca Osiride nel cimitero ed evocalo sul tuo terreno.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Medicina Egizia",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Ripristina la fede di un tuo santo al suo quantitativo iniziale.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Mummificazione",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Riporta una carta scomunicata o nel cimitero, nel tuo reliquiario.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Nefti",
+    "type": "Santo",
+    "rarity_or_crosses": "1",
+    "fede": "1",
+    "forza": "3",
+    "effect": "Quando questa carta viene distrutta, evoca Set dal tuo cimitero sul terreno.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Neith",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "2",
+    "forza": "1",
+    "effect": "Quando entra in campo, infligge 1 danno a ogni santo avversario.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Nun",
+    "type": "Artefatto",
+    "rarity_or_crosses": "8",
+    "fede": "8",
+    "forza": "",
+    "effect": "Durante la fase di pescata, scegli una carta con fede minore o uguale a 10 prima di metterla in mano: puoi giocarla gratuitamente.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Oggetti di Famiglia",
+    "type": "Benedizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Equipaggia questa carta ad un tuo santo non danneggiato. Dimezza la sua fede iniziale. Distruggi questa carta quando viene distrutto il santo a cui è stata equipaggiata.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Osiride",
+    "type": "Santo",
+    "rarity_or_crosses": "10",
+    "fede": "25",
+    "forza": "10",
+    "effect": "Ogni carta sconfitta da Osiride viene scomunicata invece che mandata al cimitero.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Passaggio all'Aldilà",
+    "type": "Benedizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Sacrifica un santo sul tuo terreno e ottieni ispirazione pari alla sua forza per questo turno.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Piaga Ignota",
+    "type": "Maledizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Evoca un Token Piaga su ogni zona santo avversaria libera.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Piramide: Chefren",
+    "type": "Artefatto",
+    "rarity_or_crosses": "7",
+    "fede": "8",
+    "forza": "",
+    "effect": "Con 1 piramide: tutti i tuoi santi hanno +5 forza. Con 2 piramidi: i tuoi santi raddoppiano la fede iniziale. Con 3 piramidi: peschi 2 carte in più ogni turno. Gli effetti precedenti sono mantenuti.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Piramide: Cheope",
+    "type": "Artefatto",
+    "rarity_or_crosses": "7",
+    "fede": "8",
+    "forza": "",
+    "effect": "Con 1 piramide: tutti i tuoi santi hanno +5 forza. Con 2 piramidi: i tuoi santi raddoppiano la fede iniziale. Con 3 piramidi: peschi 2 carte in più ogni turno. Gli effetti precedenti sono mantenuti.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Piramide: Micerino",
+    "type": "Artefatto",
+    "rarity_or_crosses": "7",
+    "fede": "8",
+    "forza": "",
+    "effect": "Con 1 piramide: tutti i tuoi santi hanno +5 forza. Con 2 piramidi: i tuoi santi raddoppiano la fede iniziale. Con 3 piramidi: peschi 2 carte in più ogni turno. Gli effetti precedenti sono mantenuti.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Proibizione Egizia",
+    "type": "Maledizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Annulla l’effetto di un santo.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Ptah",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "3",
+    "forza": "2",
+    "effect": "Finchè questa carta è sul tuo terreno, all'inizio del turno puoi rimandare una delle carte pescate nel reliquiario, rimescolarlo e pescarne un'altra.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Ra",
+    "type": "Santo",
+    "rarity_or_crosses": "8",
+    "fede": "20",
+    "forza": "20",
+    "effect": "Può essere giocato gratuitamente se Nun è già sul campo.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Rito Funebre",
+    "type": "Benedizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli un santo dal cimitero e rimandalo nel reliquiario.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Sacerdote Orologio",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "1",
+    "forza": "1",
+    "effect": "Scegli un santo avversario danneggiato con rarità ≤ 5. Quando questo sacerdote muore, anche il santo avversario scelto viene distrutto.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Sacerdote Oroscopo",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "4",
+    "forza": "2",
+    "effect": "Quando viene sconfitto in battaglia, cerca una benedizione nel tuo reliquiario e aggiungila alla mano.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Schiavi",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "8",
+    "forza": "2",
+    "effect": "Ogni volta che riceve danno non letali, ottiene +2 fede.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Schiavo Mutilato",
+    "type": "Santo",
+    "rarity_or_crosses": "1",
+    "fede": "2",
+    "forza": "2",
+    "effect": "Se sconfigge un santo avversario, guadagna +2 fede e +2 forza.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Set",
+    "type": "Santo",
+    "rarity_or_crosses": "1",
+    "fede": "2",
+    "forza": "2",
+    "effect": "Finché Set è in campo, può essere l’unico bersaglio degli attacchi avversari.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Seth",
+    "type": "Santo",
+    "rarity_or_crosses": "7",
+    "fede": "6",
+    "forza": "6",
+    "effect": "Quando entra in campo, puoi mandare Osiride dal reliquiario al cimitero.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Sfinge",
+    "type": "Edificio",
+    "rarity_or_crosses": "10",
+    "fede": "10",
+    "forza": "",
+    "effect": "Può essere giocata solo se Cheope, Chefren e Micerino sono sul campo. Finchè questa carta è sul campo, il tuo avversario paga doppia ispirazione per giocare carte.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Tempesta di Sabbia",
+    "type": "Maledizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Ogni santo sul terreno perde 3 punti fede.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Token Piaga",
+    "type": "Token",
+    "rarity_or_crosses": "",
+    "fede": "3",
+    "forza": "0",
+    "effect": "",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Ultima Offerta",
+    "type": "Benedizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Scarta un santo dalla mano al cimitero: un tuo santo sul terreno guadagna fede pari alla forza della carta scartata.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Unut",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "3",
+    "forza": "2",
+    "effect": "Questa carta non può essere scomunicata.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Vasi Canopi",
+    "type": "Artefatto",
+    "rarity_or_crosses": "6",
+    "fede": "6",
+    "forza": "",
+    "effect": "Equipaggiala ad un tuo santo. Quando muore, distruggi questa carta ed evocalo di nuovo senza i suoi effetti.",
+    "set": "EGI-1",
+    "faction": "Egiziane"
+  },
+  {
+    "name": "Av'drna",
+    "type": "Edificio",
+    "rarity_or_crosses": "2",
+    "fede": "4",
+    "forza": "",
+    "effect": "Ogni volta che il tuo avversario pesca, questa carta perde 1 punto fede e tu riduci i tuoi punti peccato di 2. Se la fede arriva a 0, distruggi Av'drna.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Avidità di Av",
+    "type": "Maledizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Entrambi i giocatori pescano 3 carte.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Dono di Kah",
+    "type": "Benedizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Puoi pescare fino a 5 carte. Ogni carta pescata costa 2 ispirazione questo turno.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Fujn-dar",
+    "type": "Santo",
+    "rarity_or_crosses": "1",
+    "fede": "1",
+    "forza": "5",
+    "effect": "Se Fujn-dar distrugge un santo, il proprietario della carta distrutta scarta 2 carte dalla mano.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Fujn'lyat",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Sposta 3 carte dal tuo cimitero al tuo reliquiario.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Furia di Llakhnal",
+    "type": "Maledizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Giocabile solo se entrambi i giocatori hanno meno di 50 punti peccato. Ogni giocatore guadagna 15 punti peccato. Esilia questa carta.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Gggnag'ljep",
+    "type": "Artefatto",
+    "rarity_or_crosses": "7",
+    "fede": "6",
+    "forza": "",
+    "effect": "Finchè questa carta è in campo, rendi uno slot artefatto dell'avversario inutilizzabile.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Kah-ok",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "2",
+    "forza": "1",
+    "effect": "All’inizio di ogni tuo turno, aumenta la fede di Kah-ok di 2. Se raggiunge 10 fede, distruggi questa carta. Quando viene distrutta in questo modo, ottieni peccato pari alla fede raggiunta.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Llakhnal",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "5",
+    "forza": "7",
+    "effect": "Non può essere bersagliato da attacchi. Viene automaticamente distrutto all’inizio del turno successivo a quello in cui è stato evocato.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Maledizione di Ykknødar",
+    "type": "Maledizione",
+    "rarity_or_crosses": "9",
+    "fede": "",
+    "forza": "",
+    "effect": "Prendi le prime e le ultime 5 carte del tuo reliquiario. Esilia i santi, manda le benedizioni e le maledizioni al cimitero e posiziona artefatti ed edifici in campo. Se la zona edificio è occupata, distruggi l'edificio già presente in campo. Poi esilia questa carta.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Ph'drna",
+    "type": "Edificio",
+    "rarity_or_crosses": "white",
+    "fede": "10",
+    "forza": "",
+    "effect": "Finché Ph'drna è in campo, ogni santo viene evocato nel campo dell’altro giocatore. Il tuo avversario può distruggerlo solo sacrificando 1 edificio o 4 artefatti e pagando 10 ispirazione.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Ph'kdam",
+    "type": "Benedizione",
+    "rarity_or_crosses": "9",
+    "fede": "",
+    "forza": "",
+    "effect": "Giocabile solo scartando 6 carte dalla tua mano. Cerca un artefatto nel tuo reliquiario e posizionalo in campo. Poi passa il turno ed esilia questa carta.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Pkad-nok",
+    "type": "Santo",
+    "rarity_or_crosses": "3",
+    "fede": "4",
+    "forza": "1",
+    "effect": "Qualsiasi carta che attacca o viene attaccata da Pkad-nok viene distrutta dopo il calcolo dei danni. Se un santo viene distrutto in questo modo, entrambi i giocatori ottengono peccato pari alla sua fede.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Pkad-nok'ljep",
+    "type": "Benedizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Giocabile solo se hai meno santi in campo rispetto al tuo avversario. Pesca 1 carta.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Proibizione di Ph",
+    "type": "Maledizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Annulla l'effetto di un santo.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Specchio di Ykknødar",
+    "type": "Artefatto",
+    "rarity_or_crosses": "10",
+    "fede": "9",
+    "forza": "",
+    "effect": "Può essere giocato solo se entrambi i giocatori hanno più di 50 punti peccato. Scomunica tutte le carte sul terreno, in mano e nei cimiteri di entrambi i giocatori. Evoca Ykknødar dalla tua mano o reliquiario.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Token Gub-ner",
+    "type": "Token",
+    "rarity_or_crosses": "",
+    "fede": "4",
+    "forza": "1",
+    "effect": "",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Volere di Ph",
+    "type": "Innata",
+    "rarity_or_crosses": "",
+    "fede": "",
+    "forza": "",
+    "effect": "Può essere inclusa solo in un mazzo composto interamente da carte della religione Ph-Dak'Gaph. Ogni carta pescata ti fa guadagnare 1 punto peccato. Ogni volta che una carta viene scomunicata, rimuovi 1 punto peccato.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Ya-ner",
+    "type": "Santo",
+    "rarity_or_crosses": "2",
+    "fede": "4",
+    "forza": "4",
+    "effect": "All'inizio di ogni tuo turno, se non è già presente, evoca un Token Gub-ner dietro a Ya-ner. Se Ya-ner viene distrutta in battaglia e un Token Gub-ner è sul campo, distruggi il token al posto di Ya-ner e ripristina la fede di questa carta al suo valore iniziale.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Ykknødar",
+    "type": "Santo",
+    "rarity_or_crosses": "10",
+    "fede": "30",
+    "forza": "0",
+    "effect": "Può essere evocato solo tramite “Specchio di Ykknødar”. Non può essere distrutto da effetti. Non può attaccare. Finché è in campo, ogni carta pescata dal tuo avversario ti fa perdere 3 punti peccato. Alla sua morte, distruggi e scomunica lo Specchio.",
+    "set": "PHD-1",
+    "faction": "Ph-DakGaph"
+  },
+  {
+    "name": "Barriera Magica",
+    "type": "Benedizione",
+    "rarity_or_crosses": "1",
+    "fede": "",
+    "forza": "",
+    "effect": "Attiva questa carta per annullare l’attivazione di una Benedizione o di una Maledizione nemica.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Barriera Magica Celestiale",
+    "type": "Benedizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Scarta 1 carta per attivarla. Annulla l’attivazione di una Benedizione o Maledizione avversaria. Poi rimetti questa carta nel tuo reliquiario.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Collasso",
+    "type": "Maledizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Se entrambi i giocatori non controllano edifici, questa carta non ha effetto. Se entrambi hanno almeno un edificio, ogni giocatore sceglie un proprio artefatto e lo distrugge.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Contemplazione",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Se hai speso più di 7 ispirazione in questo turno, ottieni 1 ispirazione extra fino all’inizio del tuo prossimo turno.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Cura",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Conferisci +5 fede a un tuo santo.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Cura Rapida",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Conferisci +3 fede a due santi a tua scelta.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Cura Totale",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "All’inizio del prossimo turno, ripristina tutta la fede di un santo a tua scelta.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Muraglia",
+    "type": "Maledizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Annulla il primo attacco che ricevi in questo turno.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Pozione Celestiale",
+    "type": "Benedizione",
+    "rarity_or_crosses": "7",
+    "fede": "",
+    "forza": "",
+    "effect": "Cura un santo fino a riportare la sua fede al valore iniziale.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Pozione Perdi-tempo",
+    "type": "Maledizione",
+    "rarity_or_crosses": "4",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli un santo come bersaglio: non può attaccare nel suo prossimo turno.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Rinforzi",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Sostituisci un tuo santo attivo con uno in posizione di difesa.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Ritorno Catastrofico",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Scegli un santo sul tuo terreno. Rimandalo nella mano del suo proprietario.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Ritorno Infame",
+    "type": "Maledizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Evoca un santo dal tuo cimitero con 7 croci o meno. Quel santo non può attaccare.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Visioni Errate",
+    "type": "Benedizione",
+    "rarity_or_crosses": "2",
+    "fede": "",
+    "forza": "",
+    "effect": "Guarda la carta in fondo al tuo reliquiario. Puoi spostarla in cima o lasciarla in fondo.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Concentrazione",
+    "type": "Benedizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Pesca 2 carte.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Meditazione",
+    "type": "Benedizione",
+    "rarity_or_crosses": "5",
+    "fede": "",
+    "forza": "",
+    "effect": "Pesca 3 carte.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Ricerca Archeologica",
+    "type": "Benedizione",
+    "rarity_or_crosses": "6",
+    "fede": "",
+    "forza": "",
+    "effect": "Cerca un artefatto nel tuo reliquiario e aggiungilo alla tua mano.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Corruzione",
+    "type": "Maledizione",
+    "rarity_or_crosses": "3",
+    "fede": "",
+    "forza": "",
+    "effect": "Il giocatore avversario ottiene +5 peccato.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Vilipendio",
+    "type": "Maledizione",
+    "rarity_or_crosses": "9",
+    "fede": "",
+    "forza": "",
+    "effect": "Questa carta può essere giocata solo se il peccato del giocatore avversario è uguale o inferiore a 50. Il giocatore avversario ottiene +15 peccato.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  },
+  {
+    "name": "Seguace",
+    "type": "Santo",
+    "rarity_or_crosses": "4",
+    "fede": "5",
+    "forza": "2",
+    "effect": "Quando questa carta viene distrutta in battaglia o mandata dal terreno al cimitero, pesca una carta.",
+    "set": "NEU-1",
+    "faction": "Neutre"
+  }
+]

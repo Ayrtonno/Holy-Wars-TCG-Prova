@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holy War - Card Browser</title>
+  <script type="module" crossorigin src="/assets/index-DVUi6xea.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-qNuP7Uow.css">
+</head>
+<body>
+  <section id="menuScreen" class="menuScreen">
+    <div class="menuCard">
+      <h1>Holy War</h1>
+      <p>Menu principale</p>
+      <button id="openPlayBtn" class="menuBtn">Gioca</button>
+      <button id="openCardListBtn" class="menuBtn">Card List</button>
+      <button id="openShopBtn" class="menuBtn">Shop</button>
+    </div>
+  </section>
+
+  <section id="cardListScreen" class="hidden">
+    <header class="topbar">
+      <div class="topbarRow">
+        <div>
+          <h1>Holy War - Card Browser</h1>
+          <p>Catalogo completo carte con filtri multipli e anteprima su template reale.</p>
+        </div>
+        <button id="backToMenuFromCards" class="topbarBtn">Menu</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel filters">
+        <h2>Filtri</h2>
+
+        <label>
+          Cerca nome / testo effetto
+          <input id="searchInput" type="text" placeholder="Es. Thor, scomunica, pesca..." />
+        </label>
+
+        <label>
+          Fazione
+          <select id="factionFilter">
+            <option value="">Tutte</option>
+          </select>
+        </label>
+
+        <label>
+          Tipo
+          <select id="typeFilter">
+            <option value="">Tutti</option>
+          </select>
+        </label>
+
+        <label>
+          Croci
+          <select id="crossesFilter">
+            <option value="">Qualsiasi</option>
+            <option value="white">Croce Bianca</option>
+            <option value="1-3">1-3</option>
+            <option value="4-6">4-6</option>
+            <option value="7-9">7-9</option>
+            <option value="10">10</option>
+            <option value="unknown">Non definito/testo</option>
+          </select>
+        </label>
+
+        <label>
+          Fede (min)
+          <input id="faithMin" type="number" min="0" step="1" placeholder="0" />
+        </label>
+
+        <label>
+          Fede (max)
+          <input id="faithMax" type="number" min="0" step="1" placeholder="99" />
+        </label>
+
+        <label>
+          Forza (min)
+          <input id="strengthMin" type="number" min="0" step="1" placeholder="0" />
+        </label>
+
+        <label>
+          Forza (max)
+          <input id="strengthMax" type="number" min="0" step="1" placeholder="99" />
+        </label>
+
+        <div class="checks">
+          <label><input type="checkbox" id="withEffectOnly" /> Solo con effetto testuale</label>
+          <label><input type="checkbox" id="onlyWhiteCross" /> Solo Croce Bianca</label>
+        </div>
+
+        <div class="actions">
+          <button id="resetFilters">Reset filtri</button>
+        </div>
+      </aside>
+
+      <section class="panel results">
+        <div class="resultsHeader">
+          <h2>Carte</h2>
+          <span id="resultCount">0 risultati</span>
+        </div>
+        <div id="resultList" class="resultList"></div>
+      </section>
+
+      <section class="panel details">
+        <h2>Dettaglio carta</h2>
+        <div id="emptyState" class="emptyState">Seleziona una carta dalla lista a sinistra.</div>
+
+        <article id="cardPreview" class="cardPreview hidden" aria-live="polite">
+          <div id="templateCard" class="templateCard" role="img" aria-label="Anteprima carta">
+            <div id="overlayName" class="overlayName"></div>
+            <div id="overlayCrosses" class="overlayCrosses"></div>
+            <div id="overlayFaith" class="overlayFaith"></div>
+            <div id="overlayStrength" class="overlayStrength"></div>
+            <div id="overlayEffect" class="overlayEffect"></div>
+            <div id="overlaySetId" class="overlaySetId"></div>
+          </div>
+
+          <div class="detailMeta">
+            <div><strong>Tipo:</strong> <span id="previewType"></span></div>
+            <div><strong>Fazione:</strong> <span id="previewFaction"></span></div>
+            <div><strong>Set:</strong> <span id="previewSet"></span></div>
+            <div><strong>ID:</strong> <span id="previewId"></span></div>
+            <div><strong>Croci:</strong> <span id="previewCrosses"></span></div>
+            <div><strong>Fede:</strong> <span id="previewFaith"></span></div>
+            <div><strong>Forza:</strong> <span id="previewStrength"></span></div>
+          </div>
+
+          <div class="effectTextBox">
+            <h3>Effetto (testo originale)</h3>
+            <p id="previewEffect"></p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </section>
+
+  <section id="shopScreen" class="hidden">
+    <header class="topbar">
+      <div class="topbarRow">
+        <div>
+          <h1>Holy War - Shop</h1>
+          <p>Schermata placeholder. Funzionalità in arrivo.</p>
+        </div>
+        <button id="backToMenuFromShop" class="topbarBtn">Menu</button>
+      </div>
+    </header>
+    <main class="shopPlaceholder">
+      <div class="panel">
+        <h2>Shop</h2>
+        <p>Per ora questa sezione è vuota.</p>
+      </div>
+    </main>
+  </section>
+
+  <section id="playScreen" class="hidden">
+    <header class="topbar">
+      <div class="topbarRow">
+        <div>
+          <h1>Holy War - Preparazione</h1>
+          <p>Mini-deck demo: Aquila Vorace x2, Golem di Pietra x2, Pioggia x1</p>
+        </div>
+        <div class="playHeaderActions">
+          <button id="startPrepBtn" class="topbarBtn">Gioca</button>
+          <button id="nextPhaseBtn" class="topbarBtn">Prossima Fase</button>
+          <button id="endTurnBtn" class="topbarBtn">Fine Turno</button>
+          <button id="backToMenuFromPlay" class="topbarBtn">Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="playLayout">
+      <section class="panel playBoardPanel">
+        <div class="playStats">
+          <span id="cpuInspiration">CPU Ispirazione: 10</span>
+          <span id="playerInspiration">Player Ispirazione: 10</span>
+          <span id="prepStatus">Premi "Gioca" per simulare il turno di preparazione.</span>
+        </div>
+
+        <div id="boardRoot" class="boardRoot"></div>
+      </section>
+
+      <aside class="panel playInfoPanel">
+        <h2>Carta Selezionata</h2>
+        <div id="playSelectedInfo" class="emptyState">Seleziona una carta in mano o sul campo.</div>
+        <h2 style="margin-top: 12px;">Log Azioni</h2>
+        <div id="playLog" class="playLog"></div>
+      </aside>
+    </main>
+
+    <section class="panel handPanel">
+      <div class="resultsHeader">
+        <h2>Mano Player</h2>
+        <span id="handHint">Nessuna carta selezionata</span>
+      </div>
+      <div id="playerHand" class="handCards"></div>
+    </section>
+
+    <div id="interruptModal" class="interruptModal hidden">
+      <div class="interruptCard">
+        <h3 id="interruptTitle">Finestra di Risposta</h3>
+        <p id="interruptText">Vuoi interrompere e attivare una carta?</p>
+        <div id="interruptActions" class="interruptActions"></div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
