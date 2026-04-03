@@ -74,7 +74,7 @@ export function renderList(state, els, onSelect) {
 
     const meta = document.createElement('div');
     meta.className = 'meta';
-    meta.textContent = `${card.faction} • ${card.type} • Croci: ${toDisplay(cardCrosses(card), '-')} • Fede: ${cardFaith(card)}`;
+    meta.textContent = `${card.faction} • ${card.type} • Croci: ${toDisplay(cardCrosses(card), '-')} • Fede: ${cardFaith(card)} • Forza: ${toDisplay(card.strength, '-')}`;
 
     row.appendChild(name);
     row.appendChild(meta);

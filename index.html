@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <section id="menuScreen" class="menuScreen">
+  <section id="menuScreen" class="menuScreen hidden">
     <div class="menuCard">
       <h1>Holy War</h1>
       <p>Menu principale</p>
-      <button id="openPlayBtn" class="menuBtn">Gioca</button>
+      <button id="openPlayBtn" class="menuBtn hidden">Gioca</button>
       <button id="openCardListBtn" class="menuBtn">Card List</button>
-      <button id="openShopBtn" class="menuBtn">Shop</button>
+      <button id="openShopBtn" class="menuBtn hidden">Shop</button>
     </div>
   </section>
 
@@ -24,7 +24,11 @@
           <h1>Holy War - Card Browser</h1>
           <p>Catalogo completo carte con filtri multipli e anteprima su template reale.</p>
         </div>
-        <button id="backToMenuFromCards" class="topbarBtn">Menu</button>
+        <div class="topbarActions">
+          <button id="createCardBtn" class="topbarBtn">Nuova carta</button>
+          <button id="toggleEditModeBtn" class="topbarBtn">Modalità modifica</button>
+          <button id="backToMenuFromCards" class="topbarBtn hidden">Menu</button>
+        </div>
       </div>
     </header>
 
@@ -97,13 +101,29 @@
       <section class="panel results">
         <div class="resultsHeader">
           <h2>Carte</h2>
-          <span id="resultCount">0 risultati</span>
+          <div class="resultsMeta">
+            <label class="sortLabel">
+              Ordina
+              <select id="sortSelect">
+                <option value="name">Nome (A-Z)</option>
+                <option value="set">Espansione (A-Z)</option>
+                <option value="rarity">Rarità (Croci)</option>
+                <option value="strength">Forza</option>
+                <option value="faith">Fede</option>
+              </select>
+            </label>
+            <button id="sortDirBtn" class="ghostBtn" type="button" title="Cambia ordine">Crescente</button>
+            <span id="resultCount">0 risultati</span>
+          </div>
         </div>
         <div id="resultList" class="resultList"></div>
       </section>
 
       <section class="panel details">
-        <h2>Dettaglio carta</h2>
+        <div class="detailsHeader">
+          <h2>Dettaglio carta</h2>
+          <button id="togglePreviewBtn" class="ghostBtn" type="button">Nascondi anteprima</button>
+        </div>
         <div id="emptyState" class="emptyState">Seleziona una carta dalla lista a sinistra.</div>
 
         <article id="cardPreview" class="cardPreview hidden" aria-live="polite">
@@ -131,6 +151,66 @@
             <p id="previewEffect"></p>
           </div>
         </article>
+
+        <section id="editPanel" class="editPanel hidden">
+          <div class="editHeader">
+            <h2 id="editTitle">Modifica carta</h2>
+            <span id="editHint" class="editHint">Clicca una carta per modificarla.</span>
+          </div>
+          <form id="editForm" class="editForm">
+            <label>
+              ID
+              <input id="editId" type="text" placeholder="es. CRI_nuova_carta" />
+            </label>
+            <label>
+              Nome
+              <input id="editName" type="text" required />
+            </label>
+            <div class="editRow">
+              <label>
+                Fazione
+                <input id="editFaction" type="text" required />
+              </label>
+              <label>
+                Set
+                <input id="editSet" type="text" placeholder="es. CRI-1" />
+              </label>
+            </div>
+            <label>
+              Tipo
+              <input id="editType" type="text" placeholder="Santo, Benedizione, Artefatto..." required />
+            </label>
+            <div class="editRow">
+              <label>
+                Croci
+                <input id="editCrosses" type="number" min="0" step="1" />
+              </label>
+              <label class="editCheckbox">
+                <input id="editWhiteCross" type="checkbox" />
+                Croce Bianca
+              </label>
+            </div>
+            <div class="editRow">
+              <label>
+                Fede
+                <input id="editFaith" type="number" min="0" step="1" />
+              </label>
+              <label>
+                Forza
+                <input id="editStrength" type="number" min="0" step="1" />
+              </label>
+            </div>
+            <label>
+              Effetto
+              <textarea id="editEffect" rows="4" placeholder="Testo effetto..."></textarea>
+            </label>
+            <div class="editActions">
+              <button id="saveCardBtn" type="submit">Salva</button>
+              <button id="deleteCardBtn" type="button" class="dangerBtn">Elimina</button>
+              <button id="cancelEditBtn" type="button">Annulla</button>
+            </div>
+          </form>
+        </section>
       </section>
     </main>
   </section>

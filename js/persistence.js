@@ -1,4 +1,4 @@
-﻿import { STORAGE_KEY } from './config.js';
+import { STORAGE_KEY, CARDS_STORAGE_KEY } from './config.js';
 
 export function loadPersistedUI() {
   try {
@@ -30,6 +30,8 @@ export function readFilterValues(els) {
     strengthMax: els.strengthMax.value,
     withEffectOnly: els.withEffectOnly.checked,
     onlyWhiteCross: els.onlyWhiteCross.checked,
+    sortKey: els.sortSelect?.value || 'name',
+    sortDir: els.sortDirBtn?.dataset?.dir || 'asc',
   };
 }
 
@@ -45,4 +47,30 @@ export function applyFilterValues(els, filters) {
   els.strengthMax.value = filters.strengthMax || '';
   els.withEffectOnly.checked = Boolean(filters.withEffectOnly);
   els.onlyWhiteCross.checked = Boolean(filters.onlyWhiteCross);
+  if (els.sortSelect) els.sortSelect.value = filters.sortKey || 'name';
+  if (els.sortDirBtn) {
+    const dir = filters.sortDir === 'desc' ? 'desc' : 'asc';
+    els.sortDirBtn.dataset.dir = dir;
+    els.sortDirBtn.textContent = dir === 'asc' ? 'Crescente' : 'Decrescente';
+  }
 }
+
+
+export function loadPersistedCards() {
+  try {
+    const raw = localStorage.getItem(CARDS_STORAGE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+export function savePersistedCards(cards) {
+  try {
+    localStorage.setItem(CARDS_STORAGE_KEY, JSON.stringify(cards));
+  } catch {
+    // ignore storage errors
+  }
+}
+

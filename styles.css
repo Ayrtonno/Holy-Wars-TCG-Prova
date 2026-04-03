@@ -36,6 +36,12 @@ body {
   gap: 16px;
 }
 
+.topbarActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .topbar h1 {
   margin: 0 0 4px;
   font-size: 1.4rem;
@@ -637,6 +643,21 @@ h2 {
   font-size: 1.05rem;
 }
 
+.detailsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ghostBtn {
+  width: auto;
+  min-width: 140px;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
 .filters label,
 .filters .checks {
   display: block;
@@ -653,6 +674,18 @@ input, select, button {
   font: inherit;
   color: inherit;
   background: #fffcf5;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px;
+  font: inherit;
+  color: inherit;
+  background: #fffcf5;
+  resize: vertical;
 }
 
 .checks label {
@@ -672,10 +705,39 @@ button {
   border-color: #cda36a;
 }
 
+.dangerBtn {
+  background: linear-gradient(180deg, #d86a5b, #b94534);
+  border-color: #9e3b2f;
+  color: #fff6f2;
+}
+
 .resultsHeader {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.resultsMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sortLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.sortLabel select {
+  width: auto;
+  min-width: 170px;
+}
+
+#sortDirBtn {
+  min-width: 110px;
 }
 
 #resultCount {
@@ -688,7 +750,8 @@ button {
   gap: 8px;
   max-height: calc(100vh - 190px);
   overflow: auto;
-  padding-right: 4px;
+  padding-right: 10px;
+  scrollbar-gutter: stable;
 }
 
 .cardRow {
@@ -714,6 +777,29 @@ button {
   color: var(--muted);
   font-size: 0.85rem;
   margin-top: 3px;
+}
+
+/* Subtle custom scrollbar for card list */
+.resultList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resultList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.resultList::-webkit-scrollbar-thumb {
+  background: rgba(142, 47, 32, 0.25);
+  border-radius: 999px;
+}
+
+.resultList::-webkit-scrollbar-thumb:hover {
+  background: rgba(142, 47, 32, 0.4);
+}
+
+.resultList {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(142, 47, 32, 0.35) transparent;
 }
 
 .emptyState {
@@ -856,6 +942,67 @@ button {
   margin: 0;
   white-space: pre-wrap;
   line-height: 1.3;
+}
+
+.editPanel {
+  margin-top: 12px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fffdf7;
+}
+
+.editHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.editHint {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.editForm {
+  display: grid;
+  gap: 10px;
+}
+
+.editRow {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 720px) {
+  .editRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 18px;
+}
+
+.editCheckbox input {
+  width: auto;
+  margin: 0;
+}
+
+.editActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.editActions button {
+  width: auto;
+  min-width: 120px;
 }
 
 /* Play UI Overhaul */

@@ -1,10 +1,14 @@
-﻿export const state = {
+export const state = {
   cards: [],
   filtered: [],
   selectedId: null,
   serialById: {},
   setIdStyleByTemplate: {},
   currentScreen: 'menu',
+  editMode: false,
+  editingId: null,
+  isCreating: false,
+  showCardArt: true,
   nextInstanceId: 1,
   instancesById: {},
 };
