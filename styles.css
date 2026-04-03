@@ -1,15 +1,13 @@
-﻿:root {
-  --bg: #f6f2e8;
-  --panel: #fffaf0;
-  --ink: #2f241a;
-  --muted: #6a5c4d;
-  --line: #d8c9ad;
-  --accent: #8e2f20;
-  --accent-2: #c1882a;
-  --shadow: 0 8px 20px rgba(42, 28, 15, 0.12);
-}
-
-* { box-sizing: border-box; }
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --ink: #c9d1d9;
+  --muted: #8b949e;
+  --line: #30363d;
+  --accent: #238636;
+  --accent-2: #58a6ff;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -18,18 +16,10 @@ body {
   line-height: 1.3;
   overflow: hidden;
   background:
-    radial-gradient(circle at 10% 10%, #fff9eb 0%, transparent 30%),
-    radial-gradient(circle at 80% 20%, #fdeecf 0%, transparent 35%),
+    radial-gradient(circle at 10% 10%, rgba(88, 166, 255, 0.08) 0%, transparent 35%),
+    radial-gradient(circle at 85% 20%, rgba(35, 134, 54, 0.08) 0%, transparent 40%),
     var(--bg);
-}
-
-.topbar {
-  padding: 16px 20px;
-  border-bottom: 1px solid var(--line);
-  background: linear-gradient(90deg, #fff5de, #f8ebcf);
-}
-
-.topbarRow {
+}.topbarRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +30,15 @@ body {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.topbarActions .topbarBtn {
+  background: #1f6feb;
+  border-color: #388bfd;
+}
+
+.topbarActions .topbarBtn:hover {
+  background: #225fbf;
 }
 
 .topbar h1 {
@@ -673,7 +672,7 @@ input, select, button {
   padding: 8px;
   font: inherit;
   color: inherit;
-  background: #fffcf5;
+  background: #0d1117;
 }
 
 textarea {
@@ -684,8 +683,58 @@ textarea {
   padding: 8px;
   font: inherit;
   color: inherit;
-  background: #fffcf5;
+  background: #0d1117;
   resize: vertical;
+}
+
+input, select, textarea, button {
+  outline: none;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.35);
+  border-color: #58a6ff;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  border-radius: 4px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  display: inline-grid;
+  place-content: center;
+  margin-top: 0;
+  padding: 0;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #58a6ff, #1f6feb);
+  transform: scale(0);
+  transition: transform 120ms ease;
+}
+
+input[type="checkbox"]:checked::after {
+  transform: scale(1);
 }
 
 .checks label {
@@ -701,14 +750,14 @@ textarea {
 
 button {
   cursor: pointer;
-  background: linear-gradient(180deg, #f4d9aa, #eabf79);
-  border-color: #cda36a;
+  background: #238636;
+  border-color: #2ea043;
 }
 
 .dangerBtn {
-  background: linear-gradient(180deg, #d86a5b, #b94534);
-  border-color: #9e3b2f;
-  color: #fff6f2;
+  background: #da3633;
+  border-color: #f85149;
+  color: #fff2f2;
 }
 
 .resultsHeader {
@@ -757,7 +806,7 @@ button {
 .cardRow {
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fffdf7;
+  background: #0d1117;
   padding: 8px;
   cursor: pointer;
   text-align: left;
@@ -766,7 +815,7 @@ button {
 .cardRow:hover { border-color: var(--accent-2); }
 .cardRow.active {
   border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(142, 47, 32, 0.18);
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.25);
 }
 
 .cardRow .name {
@@ -789,22 +838,22 @@ button {
 }
 
 .resultList::-webkit-scrollbar-thumb {
-  background: rgba(142, 47, 32, 0.25);
+  background: #30363d;
   border-radius: 999px;
 }
 
 .resultList::-webkit-scrollbar-thumb:hover {
-  background: rgba(142, 47, 32, 0.4);
+  background: #484f58;
 }
 
 .resultList {
   scrollbar-width: thin;
-  scrollbar-color: rgba(142, 47, 32, 0.35) transparent;
+  scrollbar-color: #30363d transparent;
 }
 
 .emptyState {
   color: var(--muted);
-  background: #fffcf5;
+  background: #0d1117;
   border: 1px dashed var(--line);
   border-radius: 10px;
   padding: 12px;
@@ -816,7 +865,7 @@ button {
   border-color: rgba(170, 206, 255, 0.35);
 }
 
-.hidden { display: none; }
+.hidden { display: none !important; }
 
 .templateCard {
   width: 250px;
@@ -929,7 +978,7 @@ button {
   margin-top: 12px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fffcf5;
+  background: #0d1117;
   padding: 10px;
 }
 
@@ -949,7 +998,7 @@ button {
   border: 1px dashed var(--line);
   border-radius: 12px;
   padding: 12px;
-  background: #fffdf7;
+  background: #0d1117;
 }
 
 .editHeader {
@@ -1003,6 +1052,15 @@ button {
 .editActions button {
   width: auto;
   min-width: 120px;
+}
+
+#cancelEditBtn {
+  background: #1f6feb;
+  border-color: #388bfd;
+}
+
+#cancelEditBtn:hover {
+  background: #225fbf;
 }
 
 /* Play UI Overhaul */
@@ -1368,3 +1426,17 @@ button {
     height: 180px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
