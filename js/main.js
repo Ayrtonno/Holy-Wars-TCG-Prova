@@ -7,10 +7,10 @@ import {
   savePersistedUI,
   readFilterValues,
   applyFilterValues,
-  loadPersistedCards,
-  savePersistedCards,
 } from './persistence.js';
 import { createGameModule } from './game.js';
+import { SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY } from './config.js';
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 
 function getElements() {
   return {
@@ -99,6 +99,15 @@ function getElements() {
     cancelEditBtn: document.getElementById('cancelEditBtn'),
     closeDetailsBtn: document.getElementById('closeDetailsBtn'),
     detailsBackdrop: document.getElementById('detailsBackdrop'),
+
+    authBtn: document.getElementById('authBtn'),
+    authModal: document.getElementById('authModal'),
+    authEmail: document.getElementById('authEmail'),
+    authPassword: document.getElementById('authPassword'),
+    authLoginBtn: document.getElementById('authLoginBtn'),
+    authLogoutBtn: document.getElementById('authLogoutBtn'),
+    authCloseBtn: document.getElementById('authCloseBtn'),
+    authStatusText: document.getElementById('authStatusText'),
   };
 }
 
@@ -167,8 +176,12 @@ function filterCards(els) {
 }
 
 async function loadCards(els) {
-  const persisted = loadPersistedCards();
-  if (Array.isArray(persisted) && persisted.length) return persisted;
+  try {
+    const data = await fetchCardsFromSupabase();
+    if (Array.isArray(data) && data.length) return data;
+  } catch (err) {
+    console.warn('Supabase load failed, fallback to local JSON.', err);
+  }
 
   try {
     const res = await fetch('./data/cards.json');
@@ -191,6 +204,31 @@ function buildSerialBySet(cards) {
     serialBySet[setKey] = next;
     state.serialById[card.id] = String(next).padStart(4, '0');
   });
+}
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+async function fetchCardsFromSupabase() {
+  const { data, error } = await supabase.from('cards').select('*');
+  if (error) throw error;
+  return data || [];
+}
+
+async function insertCardSupabase(card) {
+  const { data, error } = await supabase.from('cards').insert([card]).select('*');
+  if (error) throw error;
+  return data?.[0] || card;
+}
+
+async function updateCardSupabase(card, id) {
+  const { data, error } = await supabase.from('cards').update(card).eq('id', id).select('*');
+  if (error) throw error;
+  return data?.[0] || card;
+}
+
+async function deleteCardSupabase(id) {
+  const { error } = await supabase.from('cards').delete().eq('id', id);
+  if (error) throw error;
 }
 
 function cardRarityValue(card) {
@@ -352,6 +390,7 @@ function updateAutoIdIfCreating(els) {
 export async function initApp() {
   const els = getElements();
   const persisted = loadPersistedUI();
+  let currentUser = null;
 
   const persistNow = () => {
     savePersistedUI({
@@ -432,7 +471,33 @@ export async function initApp() {
     }
   };
 
+  const syncAuthUI = () => {
+    const authed = Boolean(currentUser);
+    els.authStatusText.textContent = authed ? `Connesso: ${currentUser.email}` : 'Non autenticato';
+    els.authLogoutBtn.classList.toggle('hidden', !authed);
+    els.authLoginBtn.classList.toggle('hidden', authed);
+    els.createCardBtn.disabled = !authed;
+    els.toggleEditModeBtn.disabled = !authed;
+    if (!authed && state.editMode) setEditMode(false);
+  };
+
+  const openAuthModal = () => {
+    els.authModal.classList.remove('hidden');
+    els.authEmail.focus();
+  };
+
+  const closeAuthModal = () => {
+    els.authModal.classList.add('hidden');
+  };
+
+  const requireAuth = () => {
+    if (currentUser) return true;
+    openAuthModal();
+    return false;
+  };
+
   const setEditMode = (enabled) => {
+    if (enabled && !requireAuth()) return;
     state.editMode = enabled;
     els.toggleEditModeBtn.textContent = enabled ? 'Esci modifica' : 'Modalità modifica';
     if (!enabled) {
@@ -473,6 +538,7 @@ export async function initApp() {
     renderDetails(state, els);
     updatePreviewToggle(els);
     syncEditPanel();
+    syncAuthUI();
     persistNow();
   };
 
@@ -533,12 +599,55 @@ export async function initApp() {
     els.detailsBackdrop.addEventListener('click', closeMobileDetails);
   }
 
+  els.authBtn.addEventListener('click', openAuthModal);
+  els.authCloseBtn.addEventListener('click', closeAuthModal);
+
+  els.authLoginBtn.addEventListener('click', async () => {
+    const email = els.authEmail.value.trim();
+    const password = els.authPassword.value;
+    if (!email || !password) {
+      els.authStatusText.textContent = 'Inserisci email e password.';
+      return;
+    }
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) {
+      els.authStatusText.textContent = `Errore: ${error.message}`;
+      return;
+    }
+    currentUser = data.user;
+    els.authStatusText.textContent = 'Accesso effettuato.';
+    syncAuthUI();
+    closeAuthModal();
+  });
+
+  els.authLogoutBtn.addEventListener('click', async () => {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      els.authStatusText.textContent = `Errore: ${error.message}`;
+      return;
+    }
+    currentUser = null;
+    els.authStatusText.textContent = 'Disconnesso.';
+    syncAuthUI();
+  });
+
+  supabase.auth.getSession().then(({ data }) => {
+    currentUser = data?.session?.user || null;
+    syncAuthUI();
+  });
+
+  supabase.auth.onAuthStateChange((_event, session) => {
+    currentUser = session?.user || null;
+    syncAuthUI();
+  });
+
   els.toggleEditModeBtn.addEventListener('click', () => {
     setEditMode(!state.editMode);
     renderAll();
   });
 
   els.createCardBtn.addEventListener('click', () => {
+    if (!requireAuth()) return;
     state.isCreating = true;
     state.editingId = null;
     fillEditForm(els, null);
@@ -565,6 +674,7 @@ export async function initApp() {
 
   els.editForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    if (!requireAuth()) return;
     const currentId = state.isCreating ? null : state.editingId;
     const { card, error } = buildCardFromForm(els, state.cards, currentId);
     if (error) {
@@ -572,42 +682,55 @@ export async function initApp() {
       return;
     }
 
-    if (state.isCreating) {
-      state.cards = [...state.cards, card];
-    } else {
-      const idx = state.cards.findIndex((c) => c.id === currentId);
-      if (idx === -1) {
-        state.cards = [...state.cards, card];
+    const run = async () => {
+      if (state.isCreating) {
+        const created = await insertCardSupabase(card);
+        state.cards = [...state.cards, created];
+        state.selectedId = created.id;
+        state.editingId = created.id;
       } else {
-        state.cards = [...state.cards.slice(0, idx), card, ...state.cards.slice(idx + 1)];
+        const updated = await updateCardSupabase(card, currentId);
+        const idx = state.cards.findIndex((c) => c.id === currentId);
+        if (idx === -1) {
+          state.cards = [...state.cards, updated];
+        } else {
+          state.cards = [...state.cards.slice(0, idx), updated, ...state.cards.slice(idx + 1)];
+        }
+        state.selectedId = updated.id;
+        state.editingId = updated.id;
       }
-    }
 
-    savePersistedCards(state.cards);
-    buildSerialBySet(state.cards);
-    populateFilters(els, state.cards);
+      state.isCreating = false;
+      buildSerialBySet(state.cards);
+      populateFilters(els, state.cards);
+      renderAll();
+    };
 
-    state.selectedId = card.id;
-    state.editingId = card.id;
-    state.isCreating = false;
-    renderAll();
+    run().catch((err) => {
+      alert(`Errore salvataggio: ${err.message || err}`);
+    });
   });
 
   els.deleteCardBtn.addEventListener('click', () => {
     if (!state.editingId) return;
+    if (!requireAuth()) return;
     const card = state.cards.find((c) => c.id === state.editingId);
     if (!card) return;
     if (!confirm(`Eliminare la carta "${card.name}"?`)) return;
 
-    state.cards = state.cards.filter((c) => c.id !== state.editingId);
-    savePersistedCards(state.cards);
-    buildSerialBySet(state.cards);
-    populateFilters(els, state.cards);
-
-    state.selectedId = state.cards[0]?.id || null;
-    state.editingId = null;
-    state.isCreating = false;
-    renderAll();
+    deleteCardSupabase(state.editingId)
+      .then(() => {
+        state.cards = state.cards.filter((c) => c.id !== state.editingId);
+        buildSerialBySet(state.cards);
+        populateFilters(els, state.cards);
+        state.selectedId = state.cards[0]?.id || null;
+        state.editingId = null;
+        state.isCreating = false;
+        renderAll();
+      })
+      .catch((err) => {
+        alert(`Errore eliminazione: ${err.message || err}`);
+      });
   });
 
   els.openPlayBtn.addEventListener('click', () => {
@@ -624,5 +747,6 @@ export async function initApp() {
   const targetScreen = 'cards';
   showScreen(els, targetScreen, false);
   updatePreviewToggle(els);
+  syncAuthUI();
   attachRuntimeAPI(state);
 }

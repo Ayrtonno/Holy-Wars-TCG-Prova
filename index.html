@@ -27,6 +27,7 @@
         <div class="topbarActions">
           <button id="createCardBtn" class="topbarBtn">Nuova carta</button>
           <button id="toggleEditModeBtn" class="topbarBtn">Modalità modifica</button>
+          <button id="authBtn" class="topbarBtn">Accedi</button>
           <button id="backToMenuFromCards" class="topbarBtn hidden">Menu</button>
         </div>
       </div>
@@ -306,6 +307,26 @@
       </div>
     </div>
   </section>
+
+  <div id="authModal" class="authModal hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="authCard">
+      <h3 id="authTitle">Accesso</h3>
+      <label>
+        Email
+        <input id="authEmail" type="email" placeholder="email@dominio.com" />
+      </label>
+      <label>
+        Password
+        <input id="authPassword" type="password" />
+      </label>
+      <div class="authActions">
+        <button id="authLoginBtn" type="button">Entra</button>
+        <button id="authLogoutBtn" type="button" class="ghostBtn">Esci</button>
+        <button id="authCloseBtn" type="button" class="ghostBtn">Chiudi</button>
+      </div>
+      <p id="authStatusText" class="authStatusText"></p>
+    </div>
+  </div>
 
   <script type="module" src="./app.js"></script>
 </body>

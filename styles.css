@@ -41,6 +41,44 @@ body {
   background: #225fbf;
 }
 
+.authModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 40;
+  padding: 16px;
+}
+
+.authCard {
+  width: min(420px, 100%);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.authActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.authActions button {
+  width: auto;
+  min-width: 110px;
+}
+
+.authStatusText {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .topbar h1 {
   margin: 0 0 4px;
   font-size: 1.4rem;

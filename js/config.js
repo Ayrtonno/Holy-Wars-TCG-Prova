@@ -1,5 +1,7 @@
 export const STORAGE_KEY = 'holy_war_ui_v1';
 export const CARDS_STORAGE_KEY = 'holy_war_cards_v3';
+export const SUPABASE_URL = 'https://ovdfrcbxfdpjfzphrclw.supabase.co';
+export const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_v7RBDWHGi1gDddTB77_cjA_4q0-bTSd';
 
 export const TEMPLATE_BY_TYPE = {
   Artefatto: './assets/templates/Artefatto.png',
