@@ -97,6 +97,8 @@ function getElements() {
     saveCardBtn: document.getElementById('saveCardBtn'),
     deleteCardBtn: document.getElementById('deleteCardBtn'),
     cancelEditBtn: document.getElementById('cancelEditBtn'),
+    closeDetailsBtn: document.getElementById('closeDetailsBtn'),
+    detailsBackdrop: document.getElementById('detailsBackdrop'),
   };
 }
 
@@ -331,7 +333,14 @@ function fillEditForm(els, card) {
 
 function updatePreviewToggle(els) {
   if (!els.togglePreviewBtn) return;
-  els.togglePreviewBtn.textContent = state.showCardArt ? 'Nascondi anteprima' : 'Mostra anteprima';
+  els.togglePreviewBtn.setAttribute('aria-label', state.showCardArt ? 'Nascondi anteprima' : 'Mostra anteprima');
+  els.togglePreviewBtn.setAttribute('title', state.showCardArt ? 'Nascondi anteprima' : 'Mostra anteprima');
+  const onIcon = els.togglePreviewBtn.querySelector('.iconPreviewOn');
+  const offIcon = els.togglePreviewBtn.querySelector('.iconPreviewOff');
+  if (onIcon && offIcon) {
+    onIcon.classList.toggle('hidden', !state.showCardArt);
+    offIcon.classList.toggle('hidden', state.showCardArt);
+  }
   els.templateCard.classList.toggle('hidden', !state.showCardArt);
 }
 
@@ -357,6 +366,24 @@ export async function initApp() {
     showScreen(els, 'menu', false);
     return;
   }
+
+  const mobileMq = window.matchMedia('(max-width: 1080px)');
+  const setMobileDetailsOpen = (open) => {
+    document.body.classList.toggle('mobile-details-open', open);
+    if (els.detailsBackdrop) {
+      els.detailsBackdrop.classList.toggle('hidden', !open);
+    }
+  };
+
+  const maybeOpenMobileDetails = () => {
+    if (mobileMq.matches) setMobileDetailsOpen(true);
+  };
+
+  const closeMobileDetails = () => setMobileDetailsOpen(false);
+
+  mobileMq.addEventListener('change', (event) => {
+    if (!event.matches) closeMobileDetails();
+  });
 
   state.cards = cards;
   const game = createGameModule({
@@ -431,6 +458,7 @@ export async function initApp() {
         fillEditForm(els, card);
       }
     }
+    maybeOpenMobileDetails();
     renderAll();
   };
 
@@ -496,6 +524,14 @@ export async function initApp() {
     state.showCardArt = !state.showCardArt;
     updatePreviewToggle(els);
   });
+
+  if (els.closeDetailsBtn) {
+    els.closeDetailsBtn.addEventListener('click', closeMobileDetails);
+  }
+
+  if (els.detailsBackdrop) {
+    els.detailsBackdrop.addEventListener('click', closeMobileDetails);
+  }
 
   els.toggleEditModeBtn.addEventListener('click', () => {
     setEditMode(!state.editMode);
@@ -587,5 +623,6 @@ export async function initApp() {
   renderAll();
   const targetScreen = 'cards';
   showScreen(els, targetScreen, false);
+  updatePreviewToggle(els);
   attachRuntimeAPI(state);
 }

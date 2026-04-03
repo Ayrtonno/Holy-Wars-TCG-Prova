@@ -649,12 +649,53 @@ h2 {
   gap: 10px;
 }
 
+.detailsActions {
+  display: flex;
+  gap: 8px;
+}
+
+.iconBtn {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  padding: 0;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  line-height: 1;
+}
+
+.iconBtn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
+}
+
+.iconBtn:hover {
+  background: rgba(88, 166, 255, 0.12);
+}
+
 .ghostBtn {
   width: auto;
   min-width: 140px;
   background: transparent;
   border: 1px solid var(--line);
   color: var(--ink);
+}
+
+#closeDetailsBtn {
+  display: none;
+}
+
+.detailsBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 18;
 }
 
 .filters label,
@@ -1392,6 +1433,14 @@ button {
 }
 
 @media (max-width: 1080px) {
+  #closeDetailsBtn {
+    display: inline-flex;
+  }
+
+  body {
+    overflow: auto;
+  }
+
   .layout {
     grid-template-columns: 1fr;
   }
@@ -1401,12 +1450,42 @@ button {
   }
 
   .resultList {
-    max-height: 380px;
+    max-height: none;
   }
 
   .topbarRow {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .topbarActions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .resultsMeta {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .details.panel {
+    min-height: auto;
+  }
+
+  body.mobile-details-open .details.panel {
+    position: fixed;
+    inset: 12px;
+    z-index: 20;
+    max-height: calc(100vh - 24px);
+    overflow: auto;
+  }
+
+  body.mobile-details-open {
+    overflow: hidden;
+  }
+
+  body.mobile-details-open .detailsBackdrop {
+    display: block;
   }
 
   .playLayout {
@@ -1424,6 +1503,75 @@ button {
   #playScreen .handPanel,
   .handPanel {
     height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 12px 14px;
+  }
+
+  .topbar h1 {
+    font-size: 1.1rem;
+  }
+
+  .topbar p {
+    font-size: 0.9rem;
+  }
+
+  .topbarActions .topbarBtn {
+    width: 100%;
+  }
+
+  .resultsMeta {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .sortLabel {
+    width: 100%;
+  }
+
+  .sortLabel select {
+    width: 100%;
+  }
+
+  #sortDirBtn {
+    width: 100%;
+  }
+
+  .detailsHeader {
+    position: relative;
+    padding-right: 78px;
+  }
+
+  .detailsActions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+  }
+
+  .iconBtn {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 7px;
+  }
+
+  .iconBtn svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+  }
+
+  #closeDetailsBtn svg {
+    margin-left: 3px;
+  }
+
+  body.mobile-details-open .details.panel {
+    inset: 8px;
+    max-height: calc(100vh - 16px);
   }
 }
 

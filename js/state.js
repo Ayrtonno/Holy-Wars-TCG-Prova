@@ -8,7 +8,7 @@ export const state = {
   editMode: false,
   editingId: null,
   isCreating: false,
-  showCardArt: true,
+  showCardArt: false,
   nextInstanceId: 1,
   instancesById: {},
 };
