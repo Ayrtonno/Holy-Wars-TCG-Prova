@@ -267,6 +267,16 @@ function makeUniqueId(cards, candidate, currentId) {
   return id;
 }
 
+function generateIdFromForm(els, cards, currentId) {
+  const name = els.editName.value.trim();
+  const setValue = els.editSet.value.trim();
+  const prefixMatch = setValue.match(/^([A-Za-z]{2,4})/);
+  const prefix = prefixMatch ? prefixMatch[1].toUpperCase() : '';
+  const slug = slugify(name || 'card');
+  const base = prefix ? `${prefix}_${slug}` : `custom_${slug}`;
+  return makeUniqueId(cards, base, currentId);
+}
+
 function buildCardFromForm(els, cards, currentId) {
   const name = els.editName.value.trim();
   const faction = els.editFaction.value.trim();
@@ -276,9 +286,9 @@ function buildCardFromForm(els, cards, currentId) {
     return { error: 'Compila Nome, Fazione e Tipo.' };
   }
 
-  const rawId = els.editId.value.trim();
-  const fallbackId = `custom_${slugify(name) || 'card'}`;
-  const id = makeUniqueId(cards, rawId || fallbackId, currentId);
+  const id = state.isCreating
+    ? generateIdFromForm(els, cards, currentId)
+    : makeUniqueId(cards, els.editId.value.trim(), currentId);
   const setValue = els.editSet.value.trim() || null;
   const whiteCross = els.editWhiteCross.checked;
   const crossesValue = whiteCross ? null : parseOptionalInt(els.editCrosses.value);
@@ -323,6 +333,11 @@ function updatePreviewToggle(els) {
   if (!els.togglePreviewBtn) return;
   els.togglePreviewBtn.textContent = state.showCardArt ? 'Nascondi anteprima' : 'Mostra anteprima';
   els.templateCard.classList.toggle('hidden', !state.showCardArt);
+}
+
+function updateAutoIdIfCreating(els) {
+  if (!state.isCreating) return;
+  els.editId.value = generateIdFromForm(els, state.cards, null);
 }
 
 export async function initApp() {
@@ -374,15 +389,19 @@ export async function initApp() {
       els.editTitle.textContent = 'Nuova carta';
       els.editHint.textContent = 'Compila i campi per creare una nuova carta.';
       els.deleteCardBtn.classList.add('hidden');
+      els.editId.readOnly = true;
+      updateAutoIdIfCreating(els);
     } else if (state.editingId) {
       els.editTitle.textContent = 'Modifica carta';
       els.editHint.textContent = 'Modifica i campi e salva le modifiche.';
       els.deleteCardBtn.classList.remove('hidden');
+      els.editId.readOnly = false;
     } else {
       els.editTitle.textContent = 'Modifica carta';
       els.editHint.textContent = 'Clicca una carta per modificarla.';
       els.deleteCardBtn.classList.add('hidden');
       fillEditForm(els, null);
+      els.editId.readOnly = false;
     }
   };
 
@@ -489,6 +508,7 @@ export async function initApp() {
     fillEditForm(els, null);
     setEditMode(true);
     renderAll();
+    updateAutoIdIfCreating(els);
     els.editName.focus();
   });
 
@@ -498,6 +518,9 @@ export async function initApp() {
       els.editCrosses.value = '';
     }
   });
+
+  els.editName.addEventListener('input', () => updateAutoIdIfCreating(els));
+  els.editSet.addEventListener('input', () => updateAutoIdIfCreating(els));
 
   els.cancelEditBtn.addEventListener('click', () => {
     setEditMode(false);
